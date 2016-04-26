@@ -14,7 +14,7 @@ const renderHello = name => {
 
 const getChildrenByClass = (element, name) => {
   return element.props.children.filter((value) => {
-    return value.props && value.props.class === name;
+    return value.props && value.props.className === name;
   })[0];
 }
 
@@ -26,7 +26,7 @@ describe('hello component', () => {
   });
   it('renders component', () => {
     const output = renderHello('Steve');
-    const expected = <div>Hello, <b class="test-name">Steve</b></div>;
+    const expected = <div className="test-hello">Hello, <b className="test-name">Steve</b></div>;
     expect(output).toEqualJSX(expected);
   });
 });

@@ -1,0 +1,16 @@
+{
+  "name": "end-to-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/dalek ./*.js -b chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dalek-browser-chrome": "0.0.11",
+    "dalek-cli": "0.0.5",
+    "dalekjs": "uldissturms/dalek"
+  }
+}

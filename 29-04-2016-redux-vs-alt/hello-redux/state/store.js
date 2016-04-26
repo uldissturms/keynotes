@@ -1,4 +1,6 @@
 import {createStore} from 'redux';
 import namesReducer from './namesReducer';
 
-export const store = createStore(namesReducer);
+export default function configureStore() {
+  return createStore(namesReducer);
+}
