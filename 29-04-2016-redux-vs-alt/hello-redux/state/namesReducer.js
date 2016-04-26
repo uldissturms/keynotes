@@ -8,4 +8,5 @@ const namesReducer = (state = { names: [] },  action) => {
   }
   return state;
 };
+
 export default namesReducer;

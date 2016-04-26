@@ -9,4 +9,3 @@ const Hello = ({name}) => {
 };
 
 export default Hello;
-
