@@ -26,7 +26,7 @@ describe('hello component', () => {
   });
   it('renders component', () => {
     const output = renderHello('Steve');
-    const expected = <div>Hello, <b class="test-name">Steve</b></div>;
+    const expected = <div className="test-hello">Hello, <b class="test-name">Steve</b></div>;
     expect(output).toEqualJSX(expected);
   });
 });
