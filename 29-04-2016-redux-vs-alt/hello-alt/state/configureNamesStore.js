@@ -1,6 +1,5 @@
 import alt from '../alt';
 import namesActions from '../actions/NamesActions';
-import namesProcessors from './namesProcessors'; 
 
 class NamesStore {
   constructor() {
@@ -9,11 +8,14 @@ class NamesStore {
       names: []
     }
   }
-
   add(name) {
-    const newState = namesProcessors.add(this.state, name)
-    this.setState(newState);
+    if (name === 'Stranger') {
+      return this.state;
+    }
+    this.setState({ names: [...this.state.names, name] });
   }
 }
 
-export default alt.createStore(NamesStore, 'NamesStore');
+export default function configureStore() {
+  return alt.createStore(NamesStore, 'NamesStore');
+}
