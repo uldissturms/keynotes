@@ -5,7 +5,10 @@ The real question, says Jobs, is: “What is best for the customer—integrated 
 
 flow
 ----
-Demo before explaining the structure of application
+
+- Demo before explaining the structure of application
+- Run tests after explaining each section
+- Explain what the test and code does
 
 alt examples
 ------------

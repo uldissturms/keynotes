@@ -30,4 +30,3 @@ describe('hello component', () => {
     expect(output).toEqualJSX(expected);
   });
 });
-

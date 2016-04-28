@@ -1,19 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import Greet from './components/greet.jsx';
 import HelloList from './components/helloList.jsx';
 
-const App = ({names}) => (
+const App = () => (
   <div className='main'>
     <Greet />
-    <HelloList names={names} />
+    <HelloList />
   </div>
 )
 
-const mapStateToProps = state => {
-  return {
-    names: state.names
-  }
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
