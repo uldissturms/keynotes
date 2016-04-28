@@ -6,7 +6,7 @@ const HelloList = ({ names }) => {
   return (<div className='test-hello-name-list'>
     {names.map(name =>
       <Hello name={name}/>
-    ) }
+    )}
   </div>);
 }
 
